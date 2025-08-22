@@ -8,43 +8,92 @@ const Gallery = () => {
   useFadeInAnimations(); // activates animations
   // Function to dynamically load all images from workgallery folder
   useEffect(() => {
-    const loadGalleryImages = () => {
-      // Direct reference to images in public folder - more reliable with Vite
-      const imagePaths = [
-        'images/workgallery/100.jpg',
-        'images/workgallery/101.jpg',
-        'images/workgallery/102.jpg',
-        'images/workgallery/103.jpg',
-        'images/workgallery/104.jpg',
-        'images/laser-cutting-industrial.jpeg'
-      ];
-
-      // Create gallery items with dynamic data
-      const items = imagePaths.map((path, index) => {
-        const filename = path.split('/').pop(); // Extract filename from path
-        const name = filename.replace(/\.[^/.]+$/, ''); // Remove file extension
+    const loadGalleryImages = async () => {
+      try {
+        // Load gallery configuration from YAML file
+        const response = await fetch(import.meta.env.BASE_URL+'/config/gallery-images.yaml');
+        const yamlText = await response.text();
         
-        // Use direct path without BASE_URL - Vite serves public folder at root
-        const baseUrl = import.meta.env.BASE_URL.endsWith('/') 
-          ? import.meta.env.BASE_URL 
-          : import.meta.env.BASE_URL + '/';
-        const fullPath = baseUrl + path;
+        // Parse YAML content (simple parsing for this use case)
+        const lines = yamlText.split('\n');
+        const galleryImages = [];
+        let currentImage = {};
         
-        return {
-          src: fullPath,
-          alt: `Gallery Image ${index + 1} - ${name}`,
-          title: name.replace(/[-_]/g, ' ').replace(/\b\w/g, l => l.toUpperCase()), // Convert filename to title
-          description: `Professional laser cutting work showcasing precision and quality craftsmanship.`,
-          delay: (index * 100).toString()
-        };
-      });
+        for (const line of lines) {
+          const trimmedLine = line.trim();
+          
+          if (trimmedLine.startsWith('- path:')) {
+            if (Object.keys(currentImage).length > 0) {
+              galleryImages.push(currentImage);
+            }
+            currentImage = {};
+            currentImage.path = trimmedLine.replace('- path:', '').trim().replace(/"/g, '');
+          } else if (trimmedLine.startsWith('filename:')) {
+            currentImage.filename = trimmedLine.replace('filename:', '').trim().replace(/"/g, '');
+          } else if (trimmedLine.startsWith('title:')) {
+            currentImage.title = trimmedLine.replace('title:', '').trim().replace(/"/g, '');
+          } else if (trimmedLine.startsWith('description:')) {
+            currentImage.description = trimmedLine.replace('description:', '').trim().replace(/"/g, '');
+          }
+        }
+        
+        // Add the last image
+        if (Object.keys(currentImage).length > 0) {
+          galleryImages.push(currentImage);
+        }
 
-      setGalleryItems(items);
+        // Create gallery items with data from YAML
+        const items = galleryImages.map((image, index) => {
+          // Use direct path without BASE_URL - Vite serves public folder at root
+          const baseUrl = import.meta.env.BASE_URL.endsWith('/') 
+            ? import.meta.env.BASE_URL 
+            : import.meta.env.BASE_URL + '/';
+          const fullPath = baseUrl + image.path;
+          
+          return {
+            src: fullPath,
+            alt: `Gallery Image ${index + 1} - ${image.title}`,
+            title: image.title,
+            description: image.description,
+            delay: (index * 100).toString()
+          };
+        });
+
+        setGalleryItems(items);
         
         // Debug: Log the generated URLs
-        console.log('Gallery items loaded:', items);
+        console.log('Gallery items loaded from YAML:', items);
         console.log('BASE_URL:', import.meta.env.BASE_URL);
-      };
+        
+      } catch (error) {
+        console.error('Error loading gallery configuration:', error);
+        
+        // Fallback to basic images if YAML loading fails
+        const fallbackImages = [
+          'images/workgallery/82.png',
+          'images/workgallery/83.png',
+          'images/workgallery/84.png'
+        ];
+        
+        const fallbackItems = fallbackImages.map((path, index) => {
+          const filename = path.split('/').pop();
+          const name = filename.replace(/\.[^/.]+$/, '');
+          const baseUrl = import.meta.env.BASE_URL.endsWith('/') 
+            ? import.meta.env.BASE_URL 
+            : import.meta.env.BASE_URL + '/';
+          
+          return {
+            src: baseUrl + path,
+            alt: `Gallery Image ${index + 1} - ${name}`,
+            title: name.replace(/[-_]/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+            description: `Professional laser cutting work showcasing precision and quality craftsmanship.`,
+            delay: (index * 100).toString()
+          };
+        });
+        
+        setGalleryItems(fallbackItems);
+      }
+    };
 
     loadGalleryImages();
   }, []);
@@ -61,12 +110,6 @@ const Gallery = () => {
       title: 'Custom Work',
       description: 'Contact Us',
       delay: '400'
-    },
-    {
-      icon: 'fas fa-image',
-      title: 'Your Project',
-      description: 'Could Be Here',
-      delay: '500'
     }
   ];
 

@@ -26,7 +26,7 @@ const Features = () => {
     <section id="about" className="features">
       <div className="container">
         <div className="section-header fade-in-up">
-          <h2 className="section-title">Why Choose MSD Steel?</h2>
+          <h2 className="section-title">Why Choose MSD Steels And Laser Cuttings?</h2>
           <p className="section-subtitle">
             We combine cutting-edge technology with expert craftsmanship to deliver exceptional results
           </p>

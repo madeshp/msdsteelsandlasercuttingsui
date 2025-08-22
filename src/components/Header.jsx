@@ -42,7 +42,16 @@ const Header = () => {
               scrollToSection('home');
             }}
           >
-            <i className="fas fa-cut nav-icon"></i>
+            <img 
+              src={import.meta.env.BASE_URL + '/images/msd-logo.png'} 
+              alt="MSD Steels and Laser Cuttings Logo" 
+              className="nav-logo-img"
+              style={{
+                height: '100px',
+                width: 'auto',
+                marginRight: '10px'
+              }}
+            />
             <span>MSD Steel and Laser Cuttings</span>
           </a>
           
@@ -110,7 +119,7 @@ const Header = () => {
             <li>
               <a 
                 href="#contact" 
-                className="btn btn-cta"
+                className="btn btn-primary"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection('contact');

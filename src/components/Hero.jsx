@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
             
             <h1 className="hero-title">
-              Precision Laser Cutting & Steel Fabrication
+              Precision Laser Cutting Services
             </h1>
             
             <p className="hero-subtitle">
@@ -54,22 +54,7 @@ const Hero = () => {
               loading="lazy"
             />
             
-            <div className="hero-badge-floating" style={{
-              position: 'absolute',
-              top: '20px',
-              right: '20px',
-              background: 'linear-gradient(135deg, var(--accent-color), #d97706)',
-              color: 'white',
-              padding: '12px 16px',
-              borderRadius: '50px',
-              fontSize: '14px',
-              fontWeight: '600',
-              animation: 'float 3s ease-in-out infinite',
-              boxShadow: '0 10px 25px rgba(245, 158, 11, 0.3)'
-            }}>
-              <i className="fas fa-award"></i>
-              <span style={{ marginLeft: '8px' }}>25+ Years Experience</span>
-            </div>
+            
           </div>
         </div>
       </div>

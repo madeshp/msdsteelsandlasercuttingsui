@@ -166,19 +166,20 @@ const Footer = () => {
             <div className="footer-contact">
               <p>
                 <i className="fas fa-map-marker-alt"></i> 
-                123 Industrial Drive, Your City
+                4/727/B, Vennampatti Road,Ellakiyampatti Panchayat, Indra Nagar,Teacher Colony, Dharmapuri,Tamil Nadu - 636701 
+                (landmark: Behind GH/Near Amala School)
               </p>
               <p>
                 <i className="fas fa-phone"></i> 
-                (555) 123-4567
+                (+91)- 8270708443
               </p>
               <p>
                 <i className="fas fa-envelope"></i> 
-                info@msdsteel.com
+                msdsteelsandlasercuttings@gmail.com
               </p>
               <p>
                 <i className="fas fa-clock"></i> 
-                Mon-Fri: 8AM-6PM
+                Mon-Sat: 9AM-7PM
               </p>
             </div>
           </div>
@@ -186,7 +187,7 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <p>
-            &copy; {currentYear} MSD Steel and Laser Cuttings. All rights reserved. | 
+            &copy; {currentYear} MSD Steels and Laser Cuttings. All rights reserved. | 
             Designed with precision and craftsmanship
           </p>
         </div>
