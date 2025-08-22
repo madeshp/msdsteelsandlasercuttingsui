@@ -3,4 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: '/msdsteelsandlasercuttingsui/',
+  plugins: [react()],
 })
