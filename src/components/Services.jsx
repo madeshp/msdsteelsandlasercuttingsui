@@ -19,12 +19,6 @@ const Services = () => {
       title: 'Custom Parts',
       description: 'Bespoke metal parts and components tailored to your specific requirements and specifications.',
       delay: '300'
-    },
-    {
-      icon: 'fas fa-building',
-      title: 'Architectural Elements',
-      description: 'Structural and decorative architectural metalwork for modern building and construction projects.',
-      delay: '400'
     }
   ];
 

@@ -12,8 +12,7 @@ const EMAIL_CONFIG = {
 const SERVICE_NAMES = {
   'laser-cutting': 'Precision Laser Cutting',
   'decorative': 'Decorative Panels',
-  'custom': 'Custom Parts',
-  'architectural': 'Architectural Elements'
+  'custom': 'Custom Parts'
 };
 
 // Budget range mapping

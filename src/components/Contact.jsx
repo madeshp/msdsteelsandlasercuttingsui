@@ -21,7 +21,6 @@ const Contact = () => {
     { value: 'laser-cutting', label: 'Precision Laser Cutting' },
     { value: 'decorative', label: 'Decorative Panels' },
     { value: 'custom', label: 'Custom Parts' },
-    { value: 'architectural', label: 'Architectural Elements' }
   ];
 
   const budgetOptions = [

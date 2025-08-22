@@ -75,17 +75,6 @@ const Footer = () => {
                   Custom Parts
                 </a>
               </li>
-              <li>
-                <a 
-                  href="#services"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection('services');
-                  }}
-                >
-                  Architectural Elements
-                </a>
-              </li>
             </ul>
           </div>
           

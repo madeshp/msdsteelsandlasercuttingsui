@@ -129,7 +129,6 @@ Professional laser cutting services with cutting-edge technology and expert craf
 - Precision Laser Cutting
 - Decorative Panels
 - Custom Parts
-- Architectural Elements
 
 ---
 
