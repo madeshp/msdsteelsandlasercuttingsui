@@ -1,0 +1,66 @@
+gallery_images:
+  - path: "images/workgallery/1.png"
+    filename: "1.png"
+    title: "Laser Cut Design 1"
+    description: "Professional laser cutting work showcasing precision and quality craftsmanship."
+  
+  - path: "images/workgallery/2.png"
+    filename: "2.png"
+    title: "Laser Cut Design 83"
+    description: "Professional laser cutting work showcasing precision and quality craftsmanship."
+  
+  - path: "images/workgallery/3.png"
+    filename: "3.png"
+    title: "Laser Cut Design 3"
+    description: "Professional laser cutting work showcasing precision and quality craftsmanship."
+  
+  - path: "images/workgallery/4.png"
+    filename: "4.png"
+    title: "Laser Cut Design 4"
+    description: "Professional laser cutting work showcasing precision and quality craftsmanship."
+  
+  - path: "images/workgallery/5.png"
+    filename: "5.png"
+    title: "Laser Cut Design 5"
+    description: "Professional laser cutting work showcasing precision and quality craftsmanship."
+  
+  - path: "images/workgallery/6.png"
+    filename: "6.png"
+    title: "Laser Cut Design 6"
+    description: "Professional laser cutting work showcasing precision and quality craftsmanship."
+  
+  - path: "images/workgallery/7.png"
+    filename: "7.png"
+    title: "Laser Cut Design 7"
+    description: "Professional laser cutting work showcasing precision and quality craftsmanship."
+  
+  - path: "images/workgallery/8.jpg"
+    filename: "8.jpg"
+    title: "Flower Grill Design"
+    description: "Intricate flower grill pattern laser cut with precision and detail."
+  
+  - path: "images/workgallery/9.jpg"
+    filename: "9.jpg"
+    title: "Hummingbird Design"
+    description: "Beautiful hummingbird laser cut artwork with delicate wing details."
+  
+  - path: "images/workgallery/10.jpg"
+    filename: "10.jpg"
+    title: "Hummingbird Design Variant"
+    description: "Alternative hummingbird design showcasing different artistic interpretation."
+  
+  - path: "images/workgallery/11.jpg"
+    filename: "11.jpg"
+    title: "OM Tamil Design"
+    description: "Traditional OM symbol with Tamil script laser cut design."
+  
+  - path: "images/workgallery/12.jpg"
+    filename: "12.jpg"
+    title: "Project Screenshot 12"
+    description: "Project showcase demonstrating our laser cutting capabilities."
+  
+  - path: "images/workgallery/13.png"
+    filename: "13.png"
+    title: "Project Screenshot 13"
+    description: "Project showcase demonstrating our laser cutting capabilities."
+  
