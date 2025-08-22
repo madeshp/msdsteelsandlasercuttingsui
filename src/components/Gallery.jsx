@@ -7,21 +7,21 @@ const Gallery = () => {
 
   const galleryItems = [
     {
-      src: '/images/workshop.jpg',
+      src: import.meta.env.BASE_URL + '/images/workshop.jpg',
       alt: 'Modern Laser Cutting Workshop',
       title: 'Modern Workshop',
       description: 'Our state-of-the-art laser cutting facility equipped with the latest technology for precision manufacturing.',
       delay: '0'
     },
     {
-      src: '/images/laser-cutting-industrial.jpeg',
+      src: import.meta.env.BASE_URL + '/images/laser-cutting-industrial.jpeg',
       alt: 'Industrial Laser Cutting Process',
       title: 'Industrial Cutting',
       description: 'High-precision laser cutting process for industrial applications with exceptional accuracy and clean edges.',
       delay: '100'
     },
     {
-      src: '/images/precision-parts.webp',
+      src: import.meta.env.BASE_URL + '/images/precision-parts.webp',
       alt: 'Precision Cut Metal Parts',
       title: 'Precision Parts',
       description: 'High-quality custom metal parts and components fabricated to exact specifications using advanced laser cutting technology.',

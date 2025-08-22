@@ -48,7 +48,7 @@ const Hero = () => {
           
           <div className="hero-image fade-in-right">
             <img 
-              src="/images/workshop.jpg" 
+              src={import.meta.env.BASE_URL + "images/workshop.jpg"}
               alt="Modern Laser Cutting Workshop" 
               className="hero-img"
               loading="lazy"
