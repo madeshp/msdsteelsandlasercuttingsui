@@ -44,7 +44,7 @@ This guide will help you set up EmailJS to handle contact form submissions in yo
     <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 30px 20px; text-align: center; border-radius: 8px 8px 0 0;">
             <h1 style="margin: 0; font-size: 24px;">🔥 New Quote Request</h1>
-            <p style="margin: 10px 0 0 0;">MSD Steel and Laser Cuttings</p>
+            <p style="margin: 10px 0 0 0;">MSD Steels and Laser Cuttings</p>
         </div>
         
         <div style="background: #f8fafc; padding: 30px 20px; border-radius: 0 0 8px 8px;">

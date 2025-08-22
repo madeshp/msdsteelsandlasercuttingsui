@@ -8,7 +8,7 @@ Since GitHub CLI is not available in this environment, please follow these steps
 2. Click the "+" icon in the top right corner and select "New repository"
 3. Fill in the repository details:
    - **Repository name**: `msd-steel-react`
-   - **Description**: `Modern React conversion of MSD Steel and Laser Cuttings website with EmailJS integration`
+   - **Description**: `Modern React conversion of MSD Steels and Laser Cuttings website with EmailJS integration`
    - **Visibility**: Choose Public or Private
    - **DO NOT** initialize with README, .gitignore, or license (we already have these)
 4. Click "Create repository"

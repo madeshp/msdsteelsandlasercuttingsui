@@ -24,17 +24,11 @@ const Footer = () => {
               advanced technology, and exceptional customer service.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link" aria-label="Facebook">
+              <a href="https://www.facebook.com/msdsteelsandlasercuttings" className="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#" className="social-link" aria-label="Instagram">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="social-link" aria-label="Twitter">
-                <i className="fab fa-twitter"></i>
+              <a href="https://www.youtube.com/@msdsteelsandlasercuttings" className="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-youtube"></i>
               </a>
             </div>
           </div>

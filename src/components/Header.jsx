@@ -52,7 +52,7 @@ const Header = () => {
                 marginRight: '10px'
               }}
             />
-            <span>MSD Steel and Laser Cuttings</span>
+            <span>MSD Steels and Laser Cuttings</span>
           </a>
           
           <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

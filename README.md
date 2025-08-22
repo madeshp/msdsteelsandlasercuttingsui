@@ -1,6 +1,6 @@
-# MSD Steel and Laser Cuttings - React Website
+# MSD Steels and Laser Cuttings - React Website
 
-A modern React conversion of the MSD Steel and Laser Cuttings website, featuring precision laser cutting services.
+A modern React conversion of the MSD Steels and Laser Cuttings website, featuring precision laser cutting services.
 
 ## 🚀 Features
 
@@ -122,7 +122,7 @@ The contact form uses EmailJS to send emails directly from the client-side, elim
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🏢 About MSD Steel and Laser Cuttings
+## 🏢 About MSD Steels and Laser Cuttings
 
 Professional laser cutting services with cutting-edge technology and expert craftsmanship. Specializing in:
 
