@@ -64,12 +64,12 @@ gallery_images:
     title: "Project Screenshot 13"
     description: "Project showcase demonstrating our laser cutting capabilities."
 
-    - path: "images/workgallery/panel-01.png"
+  - path: "images/workgallery/panel-01.png"
     filename: "panel-01.png"
     title: "Project Screenshot 13"
     description: "Project showcase demonstrating our laser cutting capabilities."
 
-    - path: "images/workgallery/panel-02.png"
+  - path: "images/workgallery/panel-02.png"
     filename: "panel-02.png"
     title: "Project Screenshot 13"
     description: "Project showcase demonstrating our laser cutting capabilities."
